@@ -1,0 +1,55 @@
+/* utility classes */
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto',sans-serif;
+}
+
+body{
+    background-color:aqua;
+    color:white;
+}
+.list-style{
+    list-style: none;
+}
+.m1{
+    margin: 12px;
+}
+.bg-black{
+    background-color:rgb(0, 0, 0);
+    color:white;
+}
+.bg-gray{
+    background-color: #121212;
+}
+.bg-light-gray{
+    background-color: #242424;
+}
+.border{
+    border:2px solid red;
+    /* margin:3px;  for break */
+}
+.rounded{
+    border-radius:10px ;
+}
+.flex{
+    display:flex;
+}
+.items-center{
+    align-items:center;
+}
+.justify-center{
+    justify-content: center;
+}
+.aqua{
+    background-color: aqua;
+}
+.invert{
+    filter:invert(1) /*chnging svg images color*/
+}
+.navcolor{
+    background-color: #101010;
+}
+.capital{
+    text-transform: capitalize;
+}

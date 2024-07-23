@@ -1,0 +1,309 @@
+/* dashboard.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --cardscolor:#121212;
+
+}
+.left{
+    width:25vw;  /*dividing boxes in ratio*/
+    /* background-color: red; */
+    /* padding:10px; */
+
+}
+.right{
+    width:75vw;   /*dividing boxes in ratio*/
+    max-height: 50vw;
+    overflow:scroll;
+    position:relative;
+}
+.home{
+    padding:10px;
+    font-weight: 700;
+}
+.logo{
+    padding:10px;
+}
+.home ul li{
+    padding:10px;
+    width:20px;
+    display:flex;
+    gap:10px;/* adding space */
+    list-style: none;
+    /* padding:10px;  */
+}
+.home:hover a{
+    /* text-decoration:line-through; */
+    color:yellow;
+    /* font-size:1.1rem; */
+}
+.library{
+    min-height: 80vw;
+    position:relative;
+
+}
+.add{
+    margin-left: 250px;
+  width: 23px;
+  top: -40px;
+  position: relative;
+}
+.heading{
+    width: 22px;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.playlist ul li{
+    list-style:none;
+    font-weight: 700;
+    /* position:sticky;     */
+}
+
+.first{
+    padding:10px;
+    margin:10px;
+    position: sticky;
+}
+
+.first ul li{
+    padding:10px;
+}
+.first ul li button{
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 20px;
+     padding:10px;
+   
+}
+.second{
+    position: sticky;
+    padding:10px;
+    margin:10px;
+}
+.second ul li{
+    padding:10px;
+}
+
+.second ul li button{
+    font-size:700;
+    font-size: 16px;
+    border-radius: 20px;
+    padding:10px;
+}
+.second ul:first-child{
+    text-decoration: double;
+}
+
+/*---------------------------------right part-------------------------------------------------------------*/
+.header{
+    /* padding:15px; */
+    justify-content: space-between;
+    margin:10px;
+    
+}
+.register ul {
+    list-style: none;
+    display:flex;
+    gap:23px;
+    margin-left:680px;
+    
+
+}
+.register button{
+    font-size: 16px;
+    font-weight:700;
+    border-radius: 30px;
+    padding-left:20px; 
+    padding-right:20px;
+    padding-top:15px;
+    padding-bottom:15px;
+    position:relative;
+    bottom:25px;
+
+}
+
+.register button:hover{
+    font-size: 1.1rem;
+    color:black;
+    background-color: yellow;
+}
+
+
+
+
+.arrow{
+    /* padding:10px; */
+    position: relative;
+    top:20px;
+}
+.arrow button{
+    position: relative;
+    top:3px;
+    border-radius:50px;
+    border-color: #121212;
+    background-color: black;
+    padding:5px;
+    left:6px;
+}
+.arrow button:hover{
+    font-size: 1.1rem;
+    color:black;
+    background-color: yellow;   
+}
+/* nav ul{
+    list-style: none;
+    display:flex;
+    gap:13px;
+
+
+}
+nav ul li{
+    margin-left: 100px;
+} */
+.navarrow{
+    border-radius: 100px;
+  background-color: black;
+  border: black;
+}
+
+.footer{
+    display:flex;
+    /* justify-content: space-between; */
+    font-size: 14px;
+    font-weight: 400;
+    gap:13px;
+    color:rgb(167, 167, 167);
+    position:absolute;
+    bottom:0px;
+}
+.footer a{
+    color:rgb(167, 167, 167);
+}
+.card{
+    min-height: 80vw;
+    
+}
+.albumheading{
+    display:flex;
+}
+.albumheading div div{
+    margin-left: 900px;
+    color: blueviolet;
+    position: relative;
+    bottom: 30px;
+}
+.singer{
+    display:flex;
+    padding:20px;
+}
+.singer img{
+    width:170px;
+    height:170px;
+    clip-path: circle();
+}
+.pritam{
+    justify-content: center;
+    padding:10px;
+    border:2px solid white;
+    height:210px;
+    width:170px;
+}
+.rahman{
+    justify-content: center;
+    padding:10px;
+    border:2px solid white;
+    height:210px;
+    width:170px;
+}
+.arijit{
+    justify-content: center;
+    padding:10px;
+    border:2px solid white;
+    height:210px;
+    width:170px;
+}
+.jigar{
+    justify-content: center;
+    padding:10px;
+    border:2px solid white;
+    height:210px;
+    width:170px;
+}
+.vishal{
+    justify-content: center;
+    padding:10px;
+    border:2px solid white;
+    height:210px;
+    width:170px;
+}
+
+.songlist{
+    margin:20px;
+}
+.songlist ul{
+    list-style:none;
+    display:flex;
+    gap:45px;
+    
+}
+
+.playIcon {
+    position: relative;
+    margin-left: 132px;
+    bottom: 35px;   
+    height: 40px; /* Ensure height matches width for a perfect circle */
+    background-color: green;
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure SVG doesn't overflow */
+
+    /* time for transition*/
+    opacity:1;  /* for first time */
+    transition: all 1s ease-out;
+}
+
+.playIcon svg {
+    width: 60%; /* Adjust size of SVG icon relative to container */
+    height: auto; /* Maintain aspect ratio */
+    fill: black; /* Ensure SVG paths are filled with black */
+}
+
+.playbar{
+    height:40px;
+    width:100%;
+    background-color:yellow;
+    position:fixed;
+    bottom:10px;
+}
+.swipebtn{
+    position: relative;
+    gap:1px;
+    left:450px;
+}
+
+/* .rollin{
+    background-color: rgb(127, 159, 255);
+} */
+.songcard{
+   
+    margin:10px;
+    border-radius: 10px;
+    padding:10px; 
+}
+.songcard ul{
+    padding:20px;
+}
+.songcard ul li{
+    font-size: 16px;
+    font-weight:700;
+    list-style-type:decimal;
+    color:white;
+    height:30px;
+    width:100%;
+}

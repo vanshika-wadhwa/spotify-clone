@@ -1,0 +1,142 @@
+<!-- rough.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="utilitycss.css">
+    <link rel="stylesheet" href="IconWrapper__Wrapper-sc-16usrgb-0 jEDcnm">
+</head>
+
+<body>
+
+    <div class="container: flex bg-black"> <!--container ko flex class di-->
+        <div class="left ">
+
+            <!-- 2 boxes are created -->
+            <div class="home bg-gray rounded m1">
+                <div class="logo"> <!--logo alg hua list se-->
+                    <img class="invert" src="logo.svg" alt="logo">
+                </div>
+                <ul>
+                    <li><img class="invert" src="homeIcon.svg" alt="homeIcon"><a href="dashboard.html">Home</a></li>
+                    <li><img class="invert" src="searchIcon.svg" alt="searchIcon"><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+            <div class="library bg-gray rounded m1">
+                <span class="libraryicon">
+                    <div class="heading">
+                        <img class="invert" src="libraryIcon.svg" alt="library icon">
+                        <div>Your Library </div>
+                    </div>
+                    <div class="add">
+                        <img class="invert" src="addIcon.svg" alt="addicon">
+                    </div>
+                </span>
+                <div class="first playlist bg-light-gray rounded">
+                    <ul>
+                        <li>
+                            <div>Create your first playlist</div>
+                        </li>
+                        <li>
+                            <div>It's easy we'll help you</div>
+                        </li>
+                        <li>
+                            <div><button>Create Playlist</button></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="second playlist bg-light-gray rounded">
+                    <ul>
+                        <li>Let's find some podcasts to follow now</li>
+                        <li>We'll keep you updated on new episodes</li>
+                        <li><button>Browse Podcasts</button></li>
+                    </ul>
+                </div>
+                <div class="songcard bg-light-gray capital">
+                    <H1>songlist vanshika</H1>
+                    <ul class="songlist"></ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                    <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener"><span>Cookies</span></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ---------------------------------- right side ------------------------------------------------- -->
+        <div class="right rounded bg-black">
+            <div class="rightbox rounded">
+                <nav class="header navcolor rounded">
+                    <div class="arrow">
+                        <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="gray" fill="none">
+                                <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></button>
+                        <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="gray" fill="none">
+                                <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></button>
+                    </div>
+                    <div class="register">
+                        <ul>
+                            <li><button class="signinbtn">Sign up</button></li>
+                            <li><button class="loginbtn">Log in</button></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="card bg-gray capital">
+                    <div class="albumheading">
+                        <div>
+                            <h1>Popular Artists</h1>
+                            <div>Show All</div>
+                        </div>
+                    </div>
+                    <div class="singer">
+                        <div class="pritam">
+                            <img src="images/pritam.jfif" alt="pritam">
+                            <h3>Pritam</h3>
+                            <h6>Artist</h6>
+                            <div class="playIcon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                                    <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.07845 19.0508 5.47277 17.3025 5.47277 14.1958V9.8042C5.47277 6.69754 6.07845 4.94917 7.37983 4.58041C8.6812 4.21163 10.296 5.1291 13.5257 6.96392C16.8667 8.86198 18.5371 9.811 18.8906 11.154C19.0856 11.9011 19.0856 12.0989 18.8906 12.846Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="badshah">
+                            <img src="images/badshah.jpg" alt="badshah">
+                            <h3>Badshah</h3>
+                            <h6>Artist</h6>
+                            <div class="playIcon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                                    <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.07845 19.0508 5.47277 17.3025 5.47277 14.1958V9.8042C5.47277 6.69754 6.07845 4.94917 7.37983 4.58041C8.6812 4.21163 10.296 5.1291 13.5257 6.96392C16.8667 8.86198 18.5371 9.811 18.8906 11.154C19.0856 11.9011 19.0856 12.0989 18.8906 12.846Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="sunidhi">
+                            <img src="images/sunidhi.jpg" alt="sunidhi chauhan">
+                            <h3>Sunidhi Chauhan</h3>
+                            <h6>Artist</h6>
+                            <div class="playIcon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                                    <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.07845 19.0508 5.47277 17.3025 5.47277 14.1958V9.8042C5.47277 6.69754 6.07845 4.94917 7.37983 4.58041C8.6812 4.21163 10.296 5.1291 13.5257 6.96392C16.8667 8.86198 18.5371 9.811 18.8906 11.154C19.0856 11.9011 19.0856 12.0989 18.8906 12.846Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="rough.js"></script>
+</body>
+
+</html>
